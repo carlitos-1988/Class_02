@@ -1,23 +1,21 @@
 # Class_02
 
-# LAB - Number
+# LAB - Class 02
 
-## Project Name
+## Project About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I built this site so that you can get to know me better (not much). The purpose is to provide a quick intro of myself and ask questions based on what you have read.
 
-### Author: Student/Group Name
+### Author: Juan Olmedo
 
 ### Links and Resources
-
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
 
 ### Lighthouse Accessibility Report Score
 
 * Provide a screenshot of your score after running a Lighthouse Accessibility report.
+image.png
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+Great practice with git, command line, and github for project initialization. Also the use srch files for the project. 
+
