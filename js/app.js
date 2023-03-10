@@ -1,6 +1,57 @@
-'use strict'
+'use strict';
 
 let totalScore = 0;
+let questionBank = [];
+let answers = ["dragonBall z","pokemon","shamanKing", "demon slayer", "one-punch man","naruto"];
+let answerBank = ["true","true","true","false","true","8","Naruto"];
+
+let question1 = "do I currently reside in Washington?";
+questionBank.push(question1);
+let question2 = "Was I in the Air Force?";
+questionBank.push(question2);
+let question3 = "Do I have any certifications?";
+questionBank.push(question3);
+let question4 = "Have I worked at applebees?";
+questionBank.push(question4);
+let question5 = "Correct I want to work in the cloud";
+questionBank.push(question5);
+let question6 = "please guess a number between 1-10 you will have a total of 4 guesses";
+questionBank.push(question6);
+let questionHighNumber = "Choose from the following answers" + answers;
+questionBank.push(questionHighNumber);
+
+
+
+
+//validator
+function askQuestion(question){
+    let responce = prompt(question).toLowerCase();
+    if (parseInt(answerCheck)) {
+        answerCheck = parseInt(answerCheck);   
+    }
+    if(responce === answerCheck){
+        return true;
+    }else{
+        return false; 
+    }
+}
+
+for(let i =0; i<questionBank.length; i++){
+    let isCorrect = askQuestion(questionBank[i],)
+    if(i === 5){
+        let guessedNumber = isCorrect[5];
+        refactorGuessingGame(guessedNumber);
+    }
+    
+    if(isCorrect === 'true'){
+        alert("that is correct");
+    } else{
+        alert("that is not correct");
+    }
+}
+
+
+
 
     let welcomeUser = prompt("Hello What is your name?");
     alert("Welcome " + welcomeUser + " I'm glad you have come to my cite")
@@ -71,29 +122,33 @@ let totalScore = 0;
 //     }
 // }
 
-let guessedNumber =  prompt("please guess a number between 1-10 you will have a total of 4 guesses");
+function refactorGuessingGame(aGuessedNumber){
+
 let myAnser = 8;//I know it's spelled answer
 let totalAttempts = 0;
 // let maxAttempts = 3;
 
 for(let i = 0; i<=2; i++){
    
-    if(guessedNumber == myAnser){
+    if(aGuessedNumber == myAnser){
         totalAttempts++;
         alert("That is Correct you did it in "+ totalAttempts + " attempts");
-        console.log(typeof guessedNumber);
         totalScore +=1;
         break;
-    }else if(guessedNumber>myAnser){
+    }else if(aGuessedNumber>myAnser){
         totalAttempts++;
         alert("number whas too high, Attempt# " + totalAttempts);
+//<<<<<<< main
         guessedNumber =  prompt("please guess a number between 1-10");
         
+=======
+        aGuessedNumber =  prompt("please guess a number between 1-10");
+//>>>>>>> main
         //console.log(typeof guessedNumber);
-    }else if(guessedNumber<myAnser){
+    }else if(aGuessedNumber<myAnser){
         totalAttempts++;
         alert("number was too low, Attempt# " + totalAttempts);
-        guessedNumber =  prompt("please guess a number between 1-10");
+        aGuessedNumber =  prompt("please guess a number between 1-10");
         //console.log(typeof guessedNumber);
         
     }else if(totalAttempts == 2){
@@ -101,10 +156,10 @@ for(let i = 0; i<=2; i++){
         break;
     }
 }
+}
    
 
 let possibleGuesses = 0;
-let answers = ["dragonBall z","pokemon","shamanKing", "demon slayer", "one-punch man","naruto"];
 
 let question7 = 0;
 while(question7<7){
@@ -122,7 +177,7 @@ while(question7<7){
     }
 }
 
-alert("Your total score is " + totalScore );
+alert("Your total score is " + totalScore + " out of 7");
 
 
     

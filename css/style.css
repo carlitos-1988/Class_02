@@ -20,6 +20,10 @@ h3{
     border: 1px;
 }
 
+ul{
+    list-style: circle;
+}
+
 footer{
     margin-top: 20px;
     border-top: 10px;
