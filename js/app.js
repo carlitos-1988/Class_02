@@ -128,7 +128,7 @@ let myAnser = 8;//I know it's spelled answer
 let totalAttempts = 0;
 // let maxAttempts = 3;
 
-for(let i = 0;i<=2; i++){
+for(let i = 0; i<=2; i++){
    
     if(aGuessedNumber == myAnser){
         totalAttempts++;
@@ -138,14 +138,20 @@ for(let i = 0;i<=2; i++){
     }else if(aGuessedNumber>myAnser){
         totalAttempts++;
         alert("number whas too high, Attempt# " + totalAttempts);
+//<<<<<<< main
+        guessedNumber =  prompt("please guess a number between 1-10");
+        
+=======
         aGuessedNumber =  prompt("please guess a number between 1-10");
+//>>>>>>> main
         //console.log(typeof guessedNumber);
     }else if(aGuessedNumber<myAnser){
         totalAttempts++;
         alert("number was too low, Attempt# " + totalAttempts);
         aGuessedNumber =  prompt("please guess a number between 1-10");
         //console.log(typeof guessedNumber);
-    }else if(totalAttempts == '4'){
+        
+    }else if(totalAttempts == 2){
         alert("maximum number of entries exausted");
         break;
     }
