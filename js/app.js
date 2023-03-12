@@ -138,12 +138,12 @@ for(let i = 0; i<=2; i++){
     }else if(aGuessedNumber>myAnser){
         totalAttempts++;
         alert("number whas too high, Attempt# " + totalAttempts);
-//<<<<<<< main
+
         guessedNumber =  prompt("please guess a number between 1-10");
         
-=======
+
         aGuessedNumber =  prompt("please guess a number between 1-10");
-//>>>>>>> main
+
         //console.log(typeof guessedNumber);
     }else if(aGuessedNumber<myAnser){
         totalAttempts++;

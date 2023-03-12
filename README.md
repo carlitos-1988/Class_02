@@ -25,3 +25,7 @@ Great practice with git, command line, and github for project initialization. Al
 8Mar2023
 a lot of interesting things for this assignment had a hard time counting the mumber of loops in my head. Also, struggeled with what is in scope vs out of scope for the loops. Lastly I forgot that == will check against the variable from string to a primitive data type. I know this should have worked but for some reason it did not work for me. 
 
+9Mar2023
+Driver - Michael Grantt
+Navigator - Juan Olmedo
+
