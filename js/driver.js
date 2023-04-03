@@ -9,7 +9,7 @@ let totalScore =0;
 function askQuestion1() {
     // Ask a question and store the answer
     let home = prompt("Do I currently reside in Washington?").toLowerCase();
-    if(home === 'true'){
+    if(home === 'yes'){
         // If correct, increment and display correct message
         totalScore +=1;
         alert("Correct, I live in Washington");
@@ -27,7 +27,7 @@ askQuestion1();
 
 function askQuestion2() {
     let job = prompt('Was I in the Air Force?').toLowerCase();
-    if (job === 'true') {
+    if (job === 'yes') {
         // Increment total score if true
         totalScore += 1;
         // Show message for if correct
@@ -46,7 +46,7 @@ askQuestion2();
 function askQuestion3() {
     let certification = prompt('Do I have any certifications?').toLowerCase();
     // Increment total score if true
-    if (certification === 'true') {
+    if (certification === 'yes') {
         totalScore += 1;
         // Show the message for if correct
         alert('Correct, I have a Sec+ certification');
@@ -63,7 +63,7 @@ askQuestion3();
 // Question 4 as a function
 function askQuestion4() {
     let job2 =prompt("Have I worked at Applebee's?").toLowerCase();
-    if(job2 === 'true') {
+    if(job2 === 'yes') {
         // Show the message for if incorrect
         alert("Incorrect, I have not worked at applebee's");
         // Increment total score by 1 
@@ -80,7 +80,7 @@ askQuestion4();
 // Question 5 as a function
 function askQuestion5() {
     let goal = prompt('Do I want to work on the cloud?').toLowerCase();
-    if (goal === 'true') {
+    if (goal === 'yes') {
         // Increment score by 1
         totalScore += 1;
         // Show the message for if correct

@@ -37,7 +37,7 @@ function askQuestion(question){
 }
 
 for(let i =0; i<questionBank.length; i++){
-    let isCorrect = askQuestion(questionBank[i],)
+    let isCorrect = askQuestion(questionBank[i])
     if(i === 5){
         let guessedNumber = isCorrect[5];
         refactorGuessingGame(guessedNumber);
@@ -57,7 +57,7 @@ for(let i =0; i<questionBank.length; i++){
     alert("Welcome " + welcomeUser + " I'm glad you have come to my cite")
 
     let home = prompt("do I currently reside in Washington?").toLowerCase();
-    if(home === "true"){
+    if(home === "yes"){
         //console.log("That is correct I live in Washington");
         totalScore +=1
         alert("That is correct I live in Washington")
@@ -67,7 +67,7 @@ for(let i =0; i<questionBank.length; i++){
     }
     
     let job = prompt("Was I in the Air Force?").toLowerCase();
-    if(job === 'true'){
+    if(job === 'yes'){
         //console.log("That is correct I was in the Air Force");
         totalScore +=1;
         alert("That is correct I was in the Air Force");
@@ -77,7 +77,7 @@ for(let i =0; i<questionBank.length; i++){
     }
     
     let certification = prompt("Do I have any certifications?").toLowerCase();
-    if(certification === 'true'){
+    if(certification === 'yes'){
         //console.log("Correct I have a sec+");
         totalScore +=1;
         alert("Correct I have a sec+");
@@ -87,7 +87,7 @@ for(let i =0; i<questionBank.length; i++){
     }
     
     let job2 = prompt("Have I worked at applebees?").toLocaleLowerCase();
-    if(job2 === 'true'){
+    if(job2 === 'yes'){
         //console.log("Incorrect I have not worked at applebees");
         alert("Incorrect I have not worked at applebees");
     }else{
@@ -97,7 +97,7 @@ for(let i =0; i<questionBank.length; i++){
     }
     
     let goal = prompt("Do I want to work on the cloud?").toLowerCase();
-    if(goal === "true"){
+    if(goal === "yes"){
        // console.log("Correct I want to work in the cloud");
        totalScore +=1;
        alert("Correct I want to work in the cloud");
