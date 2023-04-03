@@ -3,7 +3,7 @@
 let totalScore = 0;
 let questionBank = [];
 let answers = ["dragonBall z","pokemon","shamanKing", "demon slayer", "one-punch man","naruto"];
-let answerBank = ["true","true","true","false","true","8","Naruto"];
+let answerBank = ["yes","yes","yes","no","yes","8","Naruto"];
 
 let question1 = "do I currently reside in Washington?";
 questionBank.push(question1);
